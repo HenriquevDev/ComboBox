@@ -32,7 +32,7 @@
             this.buttonNumero = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.cmbEscolha = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -55,6 +55,7 @@
             this.buttonNumero.TabIndex = 2;
             this.buttonNumero.Text = "Escolha um número e cloque aqui!";
             this.buttonNumero.UseVisualStyleBackColor = true;
+            this.buttonNumero.Click += new System.EventHandler(this.buttonNumero_Click);
             // 
             // buttonSair
             // 
@@ -87,22 +88,21 @@
             this.cmbEscolha.Size = new System.Drawing.Size(121, 21);
             this.cmbEscolha.TabIndex = 4;
             // 
-            // label2
+            // lblResult
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Romantic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.label2.Location = new System.Drawing.Point(12, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Romantic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblResult.Location = new System.Drawing.Point(12, 113);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(0, 16);
+            this.lblResult.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 260);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.cmbEscolha);
             this.Controls.Add(this.buttonSair);
             this.Controls.Add(this.buttonNumero);
@@ -120,7 +120,7 @@
         private System.Windows.Forms.Button buttonNumero;
         private System.Windows.Forms.Button buttonSair;
         private System.Windows.Forms.ComboBox cmbEscolha;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
